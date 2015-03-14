@@ -66,7 +66,7 @@ public class LoginController {
 			System.out.println("对用户[" + userName + "]进行登录验证..验证未通过,未知账户");
 			request.setAttribute("message_login", "未知账户");
 		} catch (IncorrectCredentialsException ice) {
-			System.out.println("对用户[" + userName + "]进行登录验证..验证未通过,错误的凭证");
+    			System.out.println("对用户[" + userName + "]进行登录验证..验证未通过,错误的凭证");
 			request.setAttribute("message_login", "密码不正确");
 		} catch (LockedAccountException lae) {
 			System.out.println("对用户[" + userName + "]进行登录验证..验证未通过,账户已锁定");
